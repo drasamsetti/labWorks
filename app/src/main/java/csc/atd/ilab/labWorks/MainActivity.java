@@ -10,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import csc.atd.ilab.labWorks.altbeacon.beaconreference.RangingActivity;
 import csc.atd.ilab.labWorks.core.SpeechPlayer;
 
 
@@ -20,6 +21,9 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
         ImageView image = (ImageView) findViewById(R.id.img_banner);
+
+        Intent myIntent = new Intent(this, RangingActivity.class);
+        this.startActivity(myIntent);
     }
 
 
